@@ -82,38 +82,18 @@ export function About() {
             </p>
 
             <p className="text-gray-600">
-              I'm currently studying CS while working on side projects,
-              contributing to open source, and learning everything I can about
-              software engineering. I love the challenge of turning complex
-              problems into simple, elegant solutions.
+              I'm currently a sophomore studying CS while working on side
+              projects, contributing to open source, and learning everything I
+              can about software engineering. I love the challenge of turning
+              complex problems into simple, elegant solutions.
             </p>
 
             <p className="text-gray-600">
-              When I'm not coding, you'll find me at hackathons, volunteering on
-              campus, or helping other students learn to program. I believe the
-              best way to learn is by building and teaching.
+              When I'm not coding, you'll find me volunteering on campus,
+              enjoying the outdoors, and helping other students learn to
+              program. I believe the best way to learn is by building and
+              teaching.
             </p>
-
-            <div className="flex gap-3 pt-4 flex-wrap">
-              <motion.span
-                className="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg cursor-default"
-                whileHover={{ scale: 1.05, rotate: 2 }}
-              >
-                Detail-oriented
-              </motion.span>
-              <motion.span
-                className="px-4 py-2 bg-purple-50 text-purple-700 rounded-lg cursor-default"
-                whileHover={{ scale: 1.05, rotate: -2 }}
-              >
-                Quick learner
-              </motion.span>
-              <motion.span
-                className="px-4 py-2 bg-green-50 text-green-700 rounded-lg cursor-default"
-                whileHover={{ scale: 1.05, rotate: 2 }}
-              >
-                Creative thinker
-              </motion.span>
-            </div>
           </motion.div>
 
           <motion.div
@@ -141,15 +121,7 @@ export function About() {
                 >
                   {principle.emoji}
                 </motion.div>
-                <motion.div
-                  animate={{
-                    rotate: [0, 5, -5, 0],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                  }}
-                >
+                <motion.div>
                   <principle.icon size={24} className="mb-3 opacity-80" />
                 </motion.div>
                 <h4 className="text-white mb-2">{principle.title}</h4>
@@ -165,7 +137,8 @@ export function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <h3 className="mb-8 text-gray-900">Tech Stack & Skills</h3>
+          <h3 className="mb-1text-gray-900">Tech Stack & Skills</h3>
+          <p className="text-gray-500 mb-8">How I bring my ideas to life</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {Object.entries(techStack).map(([category, items], catIndex) => (
               <motion.div

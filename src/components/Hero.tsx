@@ -160,7 +160,7 @@ export function Hero({ setActiveSection }: HeroProps) {
               <Terminal size={24} className="mb-3 opacity-80" />
             </motion.div>
             <h3 className="text-white mb-1">15+ Projects</h3>
-            <p className="text-purple-100 text-sm">Built & deployed</p>
+            <p className="text-purple-100 text-sm">Academic & personal builds</p>
           </motion.div>
 
           <motion.div
@@ -174,8 +174,8 @@ export function Hero({ setActiveSection }: HeroProps) {
             >
               <Sparkles size={24} className="mb-3 opacity-80" />
             </motion.div>
-            <h3 className="text-white mb-1">Always Learning</h3>
-            <p className="text-green-100 text-sm">New tech & skills</p>
+            <h3 className="text-white mb-1">Problem Solver</h3>
+            <p className="text-green-100 text-sm">Turning ideas into code</p>
           </motion.div>
         </motion.div>
       </div>

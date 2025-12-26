@@ -116,8 +116,8 @@ export function Experience() {
           <div className="flex items-start gap-4 mb-6">
             <motion.div
               className="w-17 h-14  rounded-xl flex items-center justify-center flex-shrink-0"
-              whileHover={{ rotate: 360, scale: 1.1 }}
-              transition={{ duration: 0.5 }}
+              whileHover={{ rotate: [0, -10, 10, 0], scale: 1.1 }}
+              transition={{ duration: 0.4 }}
             >
               <ImageWithFallback
                 src={education.img}
