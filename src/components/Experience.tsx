@@ -15,7 +15,7 @@ export function Experience() {
 
   const education = {
     school: "Cornell University",
-    img: "public/school.png",
+    img: "/school.png",
     degree: "Bachelor of Arts in Computer Science",
     period: "2024 - 2028 (Expected)",
     gpa: "3.6/4.0",
@@ -33,7 +33,7 @@ export function Experience() {
     {
       company: "Cornell Bowers CIS",
       position: "Teaching Assistant",
-      companyLogo: "public/cornell.png",
+      companyLogo: "/cornell.png",
       companyUrl: "https://cis.cornell.edu/",
       period: "Aug 2025-Present",
       location: "Ithaca, NY",
@@ -49,7 +49,7 @@ export function Experience() {
     {
       company: "RemNeuro",
       position: "Software Engineer Intern",
-      companyLogo: "public/remneuro.png",
+      companyLogo: "/remneuro.png",
       companyUrl: "https://www.remneuro.com/",
       period: "Sep 2025-Dec 2025",
       location: "New York, NY",
@@ -65,7 +65,7 @@ export function Experience() {
     {
       company: "Singularity Softworks",
       companyUrl: "https://www.singularitysoftworks.com/",
-      companyLogo: "public/singularity.png",
+      companyLogo: "/singularity.png",
       position: "Software Engineer Intern",
       period: "May 2025-Aug 2025",
       location: "Toronto, ON, Canada",
@@ -83,7 +83,7 @@ export function Experience() {
     {
       company: "Cornell Digital Tech & Innovation",
       companyUrl: "https://new.cornelldti.org/",
-      companyLogo: "public/dti.png",
+      companyLogo: "/dti.png",
       position: "Software Developer",
       period: "Feb 2025-Present",
       location: "Ithaca, NY",

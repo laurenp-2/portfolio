@@ -108,7 +108,7 @@ export function Sidebar({ activeSection, setActiveSection }: SidebarProps) {
               transition={{ duration: 1 }}
               className="w-12 h-12 rounded-xl object-cover "
             >
-              <ImageWithFallback src="public/doodle.jpg" alt="Profile" />
+              <ImageWithFallback src="/doodle.jpg" alt="Profile" />
             </motion.div>
             <div className="self-end">
               <h3 className="text-gray-900">Lauren Pothuru</h3>
