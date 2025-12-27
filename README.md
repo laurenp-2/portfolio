@@ -21,9 +21,9 @@ A single-page application built to professionally showcase my projects, skills, 
 To run this project locally, follow these steps:
 
 1. Clone the repository:
-   `git clone github.com`
+   `git clone https://github.com/laurenp-2/portfolio.git`
 2. Navigate to the project directory:
-   `cd your-repo-name`
+   `cd portfolio`
 3. Install dependencies:
    `npm install`
 4. Start the development server:
