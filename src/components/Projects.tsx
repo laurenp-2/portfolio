@@ -13,18 +13,6 @@ import { ChevronDown } from "lucide-react";
 
 export function Projects() {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
-  const [likedProjects, setLikedProjects] = useState<Set<number>>(new Set());
-
-  const toggleLike = (index: number, e: React.MouseEvent) => {
-    e.stopPropagation();
-    const newLiked = new Set(likedProjects);
-    if (newLiked.has(index)) {
-      newLiked.delete(index);
-    } else {
-      newLiked.add(index);
-    }
-    setLikedProjects(newLiked);
-  };
 
   const projects = [
     {
@@ -60,6 +48,16 @@ export function Projects() {
         "SavorStats is a social media site for foodies! You can upload your latest cooking adventures, see what your friends are making, and discover great recipes for your next dish. Whether you're looking for inspiration to cook at home or want to brag about your latest soufflé, SavorStats provides a platform for all food-related interests.",
       tech: ["TypeScript", "React", "Firebase"],
       github: "https://github.com/laurenp-2/savorstats",
+      color: "from-orange-500 to-orange-600",
+    },
+    {
+      title: "Remneuro Dashboard",
+      category: "Health Tech",
+      description: "Medical dashboard for monitoring neurological health data.",
+      longDescription:
+        "Remneuro Dashboard is a comprehensive medical dashboard designed for healthcare professionals to monitor and analyze neurological health data. The platform integrates various data sources, providing real-time insights into patient health metrics, trends, and alerts. With an intuitive interface and advanced analytics, Remneuro Dashboard aims to enhance patient care and streamline clinical workflows.",
+      tech: ["TypeScript", "React"],
+      demo: "https://drive.google.com/file/d/17dNN3OifGzxDm0afMBGGwWcj-XhCfmTp/view?usp=sharing",
       color: "from-green-500 to-green-600",
     },
   ];
@@ -110,38 +108,18 @@ export function Projects() {
                   {project.category}
                 </motion.div>
                 <div className="flex gap-2">
-                  <motion.button
-                    onClick={(e) => toggleLike(index, e)}
-                    className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <motion.div
-                      animate={
-                        likedProjects.has(index) ? { scale: [1, 1.3, 1] } : {}
-                      }
-                      transition={{ duration: 0.3 }}
+                  {project.github && (
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      whileTap={{ scale: 0.9 }}
                     >
-                      <Heart
-                        size={18}
-                        className={
-                          likedProjects.has(index)
-                            ? "text-red-500 fill-red-500"
-                            : "text-gray-400"
-                        }
-                      />
-                    </motion.div>
-                  </motion.button>
-                  <motion.a
-                    href={project.github}
-                    target="_blank"
-                    onClick={(e) => e.stopPropagation()}
-                    className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    whileTap={{ scale: 0.9 }}
-                  >
-                    <Github size={18} className="text-gray-600" />
-                  </motion.a>
+                      <Github size={18} className="text-gray-600" />
+                    </motion.a>
+                  )}
                   <motion.a
                     href={project.demo ?? project.github}
                     target="_blank"

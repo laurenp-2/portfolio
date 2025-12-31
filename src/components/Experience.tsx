@@ -83,7 +83,7 @@ export function Experience() {
     {
       company: "Cornell Digital Tech & Innovation",
       companyUrl: "https://new.cornelldti.org/",
-      companyLogo: "/dti.png",
+      companyLogo: "/dti_logo.png",
       position: "Software Developer",
       period: "Feb 2025-Present",
       location: "Ithaca, NY",
