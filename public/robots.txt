@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://laurenpothurudev.vercel.app/sitemap.xml
