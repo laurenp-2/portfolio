@@ -28,6 +28,18 @@ export function Projects() {
       highlight: "500+ active users",
     },
     {
+      title: "Bias Swap Audit",
+      category: "NLP / AI Analysis",
+      description:
+        "Auditing demographic bias in pre-trained sentiment models via counterfactual term swapping.",
+      longDescription:
+        "A pipeline that tests whether pre-trained sentiment models assign different scores to otherwise identical sentences based on the identity of the person mentioned. Generates a swapped-sentence dataset across six demographic categories (gender, race, religion, nationality, age, socioeconomic), runs inference with HuggingFace models, and reports results with statistical tests and visualizations. Found notable score gaps — e.g. sentences about atheists scored ~0.4 lower than identical sentences about Christians, and template sensitivity analysis revealed some sentences swung nearly the full [-1, 1] scale depending on who was mentioned.",
+      tech: ["Python", "HuggingFace", "Pandas", "Scipy", "Matplotlib"],
+      github: "https://github.com/laurenp-2/bias-swap-audit",
+      color: "from-green-500 to-green-600",
+      highlight: "6 demographic categories tested",
+    },
+    {
       title: "Facial Analysis App",
       category: "Full-stack AI",
       description: "Machine learning-powered face and emotion recognition.",
