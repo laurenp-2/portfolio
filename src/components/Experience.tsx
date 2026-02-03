@@ -31,6 +31,22 @@ export function Experience() {
 
   const experiences = [
     {
+      company: "InvestMint Inc.",
+      position: "Software Engineer",
+      companyLogo: "/investmint.png",
+      companyUrl: "https://www.investmintapp.com/",
+      period: "Dec 2025-Present",
+      location: "Toronto, ON, Canada",
+      description:
+        "Architecting AWS-based ML infrastructure for financial data processing and cash-flow forecasting.",
+      achievements: [
+        "Architect AWS-based ML infrastructure integrating 10+ financial data sources to power cash-flow forecasting for fintech platforms",
+        "Reduced infrastructure costs by 100% through vendor migration, eliminating prior platform limitations",
+        "Convert business requirements into scalable technical roadmaps, driving production feature development",
+      ],
+      color: "bg-purple-500",
+    },
+    {
       company: "Cornell Bowers CIS",
       position: "Teaching Assistant",
       companyLogo: "/cornell.png",
@@ -38,11 +54,25 @@ export function Experience() {
       period: "Aug 2025-Present",
       location: "Ithaca, NY",
       description:
-        "Mentoring students in functional programming and algorithm analysis with weekly office hours and discussion sessions.",
+        "Mentoring students in programming and algorithm analysis with weekly office hours and discussion sessions.",
       achievements: [
-        "Mentor 260+ students per course in functional programming (OCaml) and algorithm analysis through 8 weekly office hours",
-        "Debug code and clarify concepts in data structures, asymptotic analysis, and proof techniques",
-        "Co-lead weekly discussion sessions for 20+ students on algorithm design, runtime complexity, and correctness proofs",
+        "Mentor 260+ students per course in programming and algorithm analysis through office hours, debugging code and clarifying concepts in data structures, asymptotic analysis, and proof techniques",
+        "Co-lead weekly discussion sessions for 20+ students, creating and reviewing problem sets on algorithm design, runtime complexity, and correctness proofs",
+      ],
+      color: "bg-blue-500",
+    },
+    {
+      company: "Cornell Digital Tech & Innovation",
+      companyUrl: "https://new.cornelldti.org/",
+      companyLogo: "/dti_logo.png",
+      position: "Software Developer",
+      period: "Feb 2025-Present",
+      location: "Ithaca, NY",
+      description:
+        "Developing and maintaining full-stack systems for CUApts housing platform.",
+      achievements: [
+        "Built and scaled housing platform with 500+ monthly users and 250+ listings using TypeScript, Express, and Firestore",
+        "Improved API response time by 43% through backend performance optimization",
       ],
       color: "bg-purple-500",
     },
@@ -56,11 +86,10 @@ export function Experience() {
       description:
         "Built full-stack neurological monitoring platform with secure authentication and real-time data processing.",
       achievements: [
-        "Built full-stack neurological monitoring platform with secure auth, role-based access, and encryption for patient biometric data",
-        "Implemented real-time anomaly detection for patient vitals with clinician-defined thresholds and dashboard alerts",
-        "Designed normalization layer integrating Apple Watch, Fitbit, and Garmin data into unified clinical format",
+        "Built full-stack neurological monitoring system processing thousands of patient data points with secure authentication and role-based access control",
+        "Unified Apple Watch, Fitbit, and Garmin data into standardized clinical formats with real-time anomaly alerts",
       ],
-      color: "bg-blue-500",
+      color: "bg-orange-500",
     },
     {
       company: "Singularity Softworks",
@@ -72,27 +101,9 @@ export function Experience() {
       description:
         "Integrated AI technologies into production applications including chat platforms and specialized tools.",
       achievements: [
-        "Integrated OpenAI GPT-4, Claude (via MCP), Whisper API, and Vercel AI SDK into three production applications",
-        "Built AI chat platform, legal contract analyzer with automated risk identification, and video interview coach",
-        "Developed real-time interview simulator processing video responses via speech-to-text",
-        "Created image generation interface with customizable style parameters",
-      ],
-      color: "bg-orange-500",
-    },
-
-    {
-      company: "Cornell Digital Tech & Innovation",
-      companyUrl: "https://new.cornelldti.org/",
-      companyLogo: "/dti_logo.png",
-      position: "Software Developer",
-      period: "Feb 2025-Present",
-      location: "Ithaca, NY",
-      description:
-        "Developing and maintaining full-stack systems for CUApts housing platform.",
-      achievements: [
-        "Develop and maintain full-stack systems for CUApts housing platform (500+ monthly users, 250+ listings) using TypeScript, Express, and Firestore",
-        "Built newsletter subscription feature and folder-based listing organization system",
-        "Operate on 2-week Agile sprints with regular debugging and system monitoring",
+        "Integrated GPT-4, Claude, Whisper, and Vercel AI SDK into 3 production applications serving 2,000+ global users",
+        "Reduced contract review time by 90% (hours → minutes) via automated AI-driven analysis",
+        "Built real-time interview simulator supporting 90-second video processing using speech-to-text and generative models",
       ],
       color: "bg-green-500",
     },
