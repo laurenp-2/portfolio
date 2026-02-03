@@ -54,7 +54,7 @@ export function Sidebar({ activeSection, setActiveSection }: SidebarProps) {
           transition={{ duration: 0.5 }}
         >
           <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
-            <span className="text-white font-bold">JD</span>
+            <span className="text-white font-bold">LP</span>
           </div>
         </motion.div>
 
