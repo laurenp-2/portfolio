@@ -76,21 +76,21 @@ export function Experience() {
       ],
       color: "bg-purple-500",
     },
-    {
-      company: "RemNeuro",
-      position: "Software Engineer Intern",
-      companyLogo: "/remneuro.png",
-      companyUrl: "https://www.remneuro.com/",
-      period: "Sep 2025-Dec 2025",
-      location: "New York, NY",
-      description:
-        "Built full-stack neurological monitoring platform with secure authentication and real-time data processing.",
-      achievements: [
-        "Built full-stack neurological monitoring system processing thousands of patient data points with secure authentication and role-based access control",
-        "Unified Apple Watch, Fitbit, and Garmin data into standardized clinical formats with real-time anomaly alerts",
-      ],
-      color: "bg-orange-500",
-    },
+    // {
+    //   company: "RemNeuro",
+    //   position: "Software Engineer Intern",
+    //   companyLogo: "/remneuro.png",
+    //   companyUrl: "https://www.remneuro.com/",
+    //   period: "Sep 2025-Dec 2025",
+    //   location: "New York, NY",
+    //   description:
+    //     "Built full-stack neurological monitoring platform with secure authentication and real-time data processing.",
+    //   achievements: [
+    //     "Built full-stack neurological monitoring system processing thousands of patient data points with secure authentication and role-based access control",
+    //     "Unified Apple Watch, Fitbit, and Garmin data into standardized clinical formats with real-time anomaly alerts",
+    //   ],
+    //   color: "bg-orange-500",
+    // },
     {
       company: "Singularity Softworks",
       companyUrl: "https://www.singularitysoftworks.com/",
