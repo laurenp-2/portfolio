@@ -18,32 +18,35 @@ export function About() {
   const principles = [
     {
       icon: Brain,
-      title: "Problem Solver",
-      description: "Breaking down complex challenges into elegant solutions",
+      title: "Evaluation-Minded",
+      description:
+        "Interested in not just building models that perform, but understanding when and why they don't",
       color: "from-blue-500 to-blue-600",
-      emoji: "🧩",
+      emoji: "🔬",
     },
     {
-      icon: Code2,
-      title: "Clean Code",
+      icon: Users,
+      title: "TA & Mentor",
       description:
-        "Writing readable, maintainable code that others can understand",
+        "Teaching algorithms to 260+ students—office hours, proofs, and a lot of runtime complexity",
       color: "from-purple-500 to-purple-600",
-      emoji: "✨",
+      emoji: "🎓",
     },
     {
       icon: Rocket,
-      title: "Fast Learner",
-      description: "Always exploring new technologies and best practices",
+      title: "Ships Things",
+      description:
+        "From independent research to production tools—I like seeing work make contact with reality",
       color: "from-green-500 to-green-600",
       emoji: "🚀",
     },
     {
-      icon: Users,
-      title: "Team Player",
-      description: "Collaborating effectively and helping others grow",
+      icon: Heart,
+      title: "Outside CS",
+      description:
+        "Sub-4 marathoner, paper maker, literary fiction reader, and would-be astrophysicist",
       color: "from-orange-500 to-orange-600",
-      emoji: "🤝",
+      emoji: "🏃",
     },
   ];
 
@@ -76,23 +79,32 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-gray-700 text-lg">
-              Hey! I'm a computer science student who fell in love with coding
-              at a young age and hasn't looked back. What started as curiosity
-              turned into a passion for building things that matter.
+              Hey, I'm Lauren. I'm a CS sophomore at Cornell, currently
+              spending most of my time on language models and how they hold up
+              under pressure. My most recent project was a benchmark for what
+              happens when you feed a RAG system wrong information on purpose
+              (the models mostly refuse to answer, even when they shouldn't,
+              which is its own kind of failure, and something I'm digging into
+              further this summer as a research fellow at Anote AI).
             </p>
 
             <p className="text-gray-600">
-              I'm currently a sophomore studying CS while working on side
-              projects, contributing to open source, and learning everything I
-              can about software engineering. I love the challenge of turning
-              complex problems into simple, elegant solutions.
+              I'm also splitting the summer with an SWE internship at Junior,
+              working on LLM tools used by investment teams at top PE firms,
+              MBB, and Big 4. During the school year I TA Cornell's algorithms
+              class, which means 260+ students, weekly discussion sections, and
+              a lot of proofs. I try to think carefully about what I build and
+              where it sits in the bigger picture of how tech shapes the way
+              people live and work.
             </p>
 
             <p className="text-gray-600">
-              When I'm not coding, you'll find me volunteering on campus,
-              enjoying the outdoors, and helping other students learn to
-              program. I believe the best way to learn is by building and
-              teaching.
+              Outside of CS: I run a lot (ran a sub-4 marathon this fall and
+              I'm slowly working through every trail around Ithaca), read
+              mostly literary fiction and classics, and would've been an
+              astrophysics major in another life. I also make paper from
+              scratch sometimes, and listen to a lot of Elliott Smith and
+              Fleetwood Mac.
             </p>
           </motion.div>
 

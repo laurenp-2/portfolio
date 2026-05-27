@@ -78,7 +78,7 @@ export function Contact() {
         >
           <h2 className="mb-1 text-gray-90 text-lg">Get in Touch</h2>
           <p className="text-gray-500 mb-12">
-            Let's build something great together
+            Get in touch.
           </p>
         </motion.div>
 
@@ -93,9 +93,9 @@ export function Contact() {
             <div className="mb-8">
               <h3 className="text-gray-900 mb-3">Let's Connect</h3>
               <p className="text-gray-600">
-                I'm always open to discussing new projects, creative ideas, or
-                opportunities to be part of your vision. Feel free to reach out
-                through any channel below.
+                I'm always happy to hear from people working on interesting
+                things, whether that's research, AI tooling, or anything in
+                that orbit. Reach out via email or LinkedIn.
               </p>
             </div>
 
@@ -123,22 +123,11 @@ export function Contact() {
             </div>
 
             <div className="p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl border border-blue-100 mt-8">
-              <h4 className="text-gray-900 mb-2">Currently Available</h4>
-              <p className="text-gray-600 text-sm mb-4">
-                Open to part-time opportunities, consulting projects, and
-                interesting collaborations.
+              <h4 className="text-gray-900 mb-2">Open to</h4>
+              <p className="text-gray-600 text-sm">
+                Summer 2027 internships, research collaborations, and
+                interesting conversations.
               </p>
-              <div className="flex gap-2">
-                <span className="px-3 py-1 bg-white text-gray-700 rounded-lg text-sm">
-                  Remote
-                </span>
-                <span className="px-3 py-1 bg-white text-gray-700 rounded-lg text-sm">
-                  Part-time
-                </span>
-                <span className="px-3 py-1 bg-white text-gray-700 rounded-lg text-sm">
-                  Contract
-                </span>
-              </div>
             </div>
           </motion.div>
 

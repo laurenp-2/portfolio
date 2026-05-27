@@ -61,7 +61,7 @@ export function Hero({ setActiveSection }: HeroProps) {
               <GraduationCap size={16} className="text-blue-600" />
             </motion.div>
             <span className="text-blue-600 text-sm">
-              Computer Science Student
+              Cornell CS · Class of 2028
             </span>
           </motion.div>
 
@@ -71,10 +71,10 @@ export function Hero({ setActiveSection }: HeroProps) {
               onMouseLeave={() => setIsHovering(false)}
               className="inline-block"
             >
-              Building elegant solutions
+              Curious about how language
             </motion.span>
             <br />
-            through{" "}
+            models think, and{" "}
             <motion.span
               className="text-blue-600 inline-block"
               animate={{
@@ -91,13 +91,13 @@ export function Hero({ setActiveSection }: HeroProps) {
                 WebkitTextFillColor: "transparent",
               }}
             >
-              clean code
+              where they break.
             </motion.span>
           </h1>
 
           <p className="text-gray-600 text-xl max-w-2xl mb-8">
-            Hi! I'm Lauren, a software engineer passionate about code, learning new
-            technologies, and building projects that solve real problems.
+            Hey, I'm Lauren. I'm a CS student at Cornell building LLM systems
+            and studying how they actually behave.
           </p>
 
           <div className="flex gap-4 mb-12">
@@ -144,8 +144,8 @@ export function Hero({ setActiveSection }: HeroProps) {
             >
               <Code2 size={24} className="mb-3 opacity-80" />
             </motion.div>
-            <h3 className="text-white mb-1">3+ Years</h3>
-            <p className="text-blue-100 text-sm">Coding experience</p>
+            <h3 className="text-white mb-1">Studying</h3>
+            <p className="text-blue-100 text-sm">LLM behavior & evaluation</p>
           </motion.div>
 
           <motion.div
@@ -159,8 +159,8 @@ export function Hero({ setActiveSection }: HeroProps) {
             >
               <Terminal size={24} className="mb-3 opacity-80" />
             </motion.div>
-            <h3 className="text-white mb-1">15+ Projects</h3>
-            <p className="text-purple-100 text-sm">Academic & personal builds</p>
+            <h3 className="text-white mb-1">Building</h3>
+            <p className="text-purple-100 text-sm">AI tools for finance & research</p>
           </motion.div>
 
           <motion.div
@@ -169,13 +169,13 @@ export function Hero({ setActiveSection }: HeroProps) {
             whileTap={{ scale: 0.95 }}
           >
             <motion.div
-              animate={{ rotate: [0, 360] }}
-              transition={{ duration: 12, repeat: Infinity, ease: "linear" }}
+              animate={{ scale: [1, 1.18, 1] }}
+              transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
             >
               <Sparkles size={24} className="mb-3 opacity-80" />
             </motion.div>
-            <h3 className="text-white mb-1">Problem Solver</h3>
-            <p className="text-green-100 text-sm">Turning ideas into code</p>
+            <h3 className="text-white mb-1">Teaching</h3>
+            <p className="text-green-100 text-sm">Algorithms @ Cornell</p>
           </motion.div>
         </motion.div>
       </div>

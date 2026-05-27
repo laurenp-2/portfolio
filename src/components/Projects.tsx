@@ -16,6 +16,55 @@ export function Projects() {
 
   const projects = [
     {
+      title: "Retrieval Perturbation: Stress-Testing RAG Faithfulness",
+      category: "AI Research",
+      description:
+        "Counterfactual benchmark for evaluating how RAG systems behave when retrieval fails.",
+      longDescription:
+        "Designed and released a counterfactual benchmark evaluating RAG system behavior under retrieval failure—corrupting context via entity substitution, factual negation, and paraphrase (control). Evaluated 4 open-weight LLMs (Llama 3.2:3b, Llama 3.1:8b, Mistral:7b, Qwen 2.5:7b) across 2,400 SQuAD examples with full significance testing (z-tests, Cohen's h, Bonferroni correction). Found the dominant failure mode is over-abstention rather than hallucination, and that model family predicts abstention calibration better than parameter count. Introduced a 3-archetype failure taxonomy (context-follower, hallucinator, over-abstainer) to guide RAG model selection. Open-sourced as a locally-runnable toolkit requiring no API keys (Ollama-based inference).",
+      tech: ["Python", "Ollama", "LLaMA", "Mistral", "Qwen", "SciPy"],
+      github: "https://github.com/laurenp-2/rag-faithfulness-bench",
+      demo: "/Lauren_Pothuru_RAG_Robustness_Research.pdf",
+      color: "from-indigo-500 to-indigo-600",
+      highlight: "2,400 SQuAD examples · 4 LLMs",
+    },
+    {
+      title: "AI Credit Analysis Agent",
+      category: "LLM Agents",
+      description:
+        "LangChain agent that validates credit applications and generates risk assessments for a commercial equipment finance lender.",
+      longDescription:
+        "Built a LangChain agent that validates credit applications against pulled credit records, generates risk assessments (Low/Medium/High), and flags potentially fraudulent documents for QuickFi, a commercial equipment finance lender. Designed a multi-stage pipeline covering document extraction (PDF/Excel/OCR), financial ratio calculation (DSCR, current ratio, debt-to-equity), and LLM-based reasoning over normalized financial data. Implemented secure, encrypted multi-document upload with in-memory processing to meet financial data handling requirements. Iterated on prompts and risk-tier definitions to calibrate outputs against borrower test cases (healthy, borderline, distressed, and doctored).",
+      tech: ["Python", "LangChain", "OpenAI", "OCR", "pandas"],
+      color: "from-teal-500 to-teal-600",
+      github: "https://github.com/laurenp-2/quickfi-credit-analysis",
+      highlight: "Fraud detection + risk tiering",
+    },
+    {
+      title: "Bring the Party (RAG + SVD)",
+      category: "Information Retrieval",
+      description:
+        "Retrieval-augmented recommender that generates menu and music suggestions from natural-language dinner party descriptions.",
+      longDescription:
+        'Built a retrieval-augmented recommender that generates menu and music suggestions from natural-language dinner party descriptions (e.g., "cozy fall dinner for six, jazz lovers, no seafood"). Used SVD-based latent semantic indexing to surface thematically relevant recipes and tracks beyond exact keyword matches, then layered an LLM on top to compose coherent menu + playlist pairings. Combined classical IR techniques (dimensionality reduction over a TF-IDF matrix) with modern generation to balance retrieval interpretability with recommendation fluency. Cornell Information Retrieval class project.',
+      tech: ["Python", "SVD", "TF-IDF", "RAG", "LLM"],
+      demo: "https://party-swizzle.4300showcase.infosci.cornell.edu/",
+      color: "from-rose-500 to-rose-600",
+      highlight: "Cornell IR class project",
+    },
+    {
+      title: "Bias Swap Audit",
+      category: "NLP / AI Analysis",
+      description:
+        "Auditing demographic bias in pre-trained sentiment models via counterfactual term swapping.",
+      longDescription:
+        "A pipeline that tests whether pre-trained sentiment models assign different scores to otherwise identical sentences based on the identity of the person mentioned. Generates a swapped-sentence dataset across six demographic categories (gender, race, religion, nationality, age, socioeconomic), runs inference with HuggingFace models, and reports results with statistical tests and visualizations. Found notable score gaps—e.g. sentences about atheists scored ~0.4 lower than identical sentences about Christians, and template sensitivity analysis revealed some sentences swung nearly the full [-1, 1] scale depending on who was mentioned.",
+      tech: ["Python", "HuggingFace", "Pandas", "Scipy", "Matplotlib"],
+      github: "https://github.com/laurenp-2/bias-swap-audit",
+      color: "from-green-500 to-green-600",
+      highlight: "6 demographic categories tested",
+    },
+    {
       title: "CUApts",
       category: "Full-stack",
       description: "Web app connecting students to off-campus housing.",
@@ -28,16 +77,15 @@ export function Projects() {
       highlight: "500+ active users",
     },
     {
-      title: "Bias Swap Audit",
-      category: "NLP / AI Analysis",
-      description:
-        "Auditing demographic bias in pre-trained sentiment models via counterfactual term swapping.",
+      title: "Remneuro Dashboard",
+      category: "Health Tech",
+      description: "Medical dashboard for monitoring neurological health data.",
       longDescription:
-        "A pipeline that tests whether pre-trained sentiment models assign different scores to otherwise identical sentences based on the identity of the person mentioned. Generates a swapped-sentence dataset across six demographic categories (gender, race, religion, nationality, age, socioeconomic), runs inference with HuggingFace models, and reports results with statistical tests and visualizations. Found notable score gaps — e.g. sentences about atheists scored ~0.4 lower than identical sentences about Christians, and template sensitivity analysis revealed some sentences swung nearly the full [-1, 1] scale depending on who was mentioned.",
-      tech: ["Python", "HuggingFace", "Pandas", "Scipy", "Matplotlib"],
-      github: "https://github.com/laurenp-2/bias-swap-audit",
-      color: "from-green-500 to-green-600",
-      highlight: "6 demographic categories tested",
+        "Remneuro Dashboard is a comprehensive medical dashboard designed for healthcare professionals to monitor and analyze neurological health data. The platform integrates various data sources, providing real-time insights into patient health metrics, trends, and alerts. With an intuitive interface and advanced analytics, Remneuro Dashboard aims to enhance patient care and streamline clinical workflows.",
+      tech: ["TypeScript", "React"],
+      demo: "https://drive.google.com/file/d/17dNN3OifGzxDm0afMBGGwWcj-XhCfmTp/view?usp=sharing",
+      color: "from-emerald-500 to-emerald-600",
+      highlight: "Multi-device health data integration",
     },
     {
       title: "Facial Analysis App",
@@ -49,7 +97,7 @@ export function Projects() {
       github: "https://github.com/laurenp-2/facial-recognition-app",
       demo: "https://facial-recognition-app-bice.vercel.app/",
       color: "from-purple-500 to-purple-600",
-      highlight: "Handles 1000+ detections per minute",
+      highlight: "Real-time emotion recognition",
     },
     {
       title: "SavorStats",
@@ -61,16 +109,7 @@ export function Projects() {
       tech: ["TypeScript", "React", "Firebase"],
       github: "https://github.com/laurenp-2/savorstats",
       color: "from-orange-500 to-orange-600",
-    },
-    {
-      title: "Remneuro Dashboard",
-      category: "Health Tech",
-      description: "Medical dashboard for monitoring neurological health data.",
-      longDescription:
-        "Remneuro Dashboard is a comprehensive medical dashboard designed for healthcare professionals to monitor and analyze neurological health data. The platform integrates various data sources, providing real-time insights into patient health metrics, trends, and alerts. With an intuitive interface and advanced analytics, Remneuro Dashboard aims to enhance patient care and streamline clinical workflows.",
-      tech: ["TypeScript", "React"],
-      demo: "https://drive.google.com/file/d/17dNN3OifGzxDm0afMBGGwWcj-XhCfmTp/view?usp=sharing",
-      color: "from-green-500 to-green-600",
+      highlight: "Social recipe sharing",
     },
   ];
 
@@ -83,7 +122,7 @@ export function Projects() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="mb-1 text-gray-90 text-lg">Projects</h2>
-          <p className="text-gray-500 mb-12">Where my skills come to life</p>
+          <p className="text-gray-500 mb-12">A mix of research, side projects, and things I built because I was curious.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">

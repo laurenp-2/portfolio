@@ -31,6 +31,37 @@ export function Experience() {
 
   const experiences = [
     {
+      company: "Junior",
+      position: "Software Engineering Intern",
+      companyLogo: "/junior.png",
+      companyUrl: "https://www.myjunior.ai/",
+      period: "Summer 2026",
+      location: "New York, NY",
+      description:
+        "Building LLM-powered tools for analysts and partners at top PE firms, MBB, Big 4, and investment banks.",
+      achievements: [
+        "Working on LLM-powered tools used by analysts and partners at top PE firms, MBB, Big 4, and investment banks, part of a growing toolkit for how these firms run their research and diligence workflows",
+        "Contributing to the Next.js / TypeScript frontend and the AI pipelines behind it",
+        "Leading a defined project from spec through deployment, with iterative feedback directly from end users, including consultants and investors at major firms shaping the feature in real time",
+      ],
+      color: "bg-teal-500",
+    },
+    {
+      company: "Anote AI",
+      position: "AI Research Fellow",
+      companyLogo: "/anote.png",
+      companyUrl: "https://anote.ai/#top",
+      period: "Summer 2026",
+      location: "New York, NY",
+      description:
+        "Selected as 1 of 15 fellows for a 10-week in-person research program on frontier AI evaluation, benchmarks, and agentic systems.",
+      achievements: [
+        "Developing open-source benchmarks and evaluation frameworks for LLMs and agentic AI, with deliverables including an arXiv-ready paper and Demo Day presentation to frontier lab researchers",
+        "Focus areas span LLM evaluation, datasets, agents, RLHF, and safety/robustness",
+      ],
+      color: "bg-indigo-500",
+    },
+    {
       company: "InvestMint Inc.",
       position: "Software Engineer",
       companyLogo: "/investmint.png",
