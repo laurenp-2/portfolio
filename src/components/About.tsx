@@ -79,7 +79,7 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-gray-700 text-lg">
-              Hey, I'm Lauren. I'm a CS sophomore at Cornell, currently
+              Hi, I'm Lauren. I'm a CS sophomore at Cornell, currently
               spending most of my time on language models and how they hold up
               under pressure. My most recent project was a benchmark for what
               happens when you feed a RAG system wrong information on purpose
