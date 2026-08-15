@@ -1,6 +1,6 @@
 export const profile = {
   name: "Lauren Pothuru",
-  heroLine: "is a cs student interested in building and understanding",
+  heroLine: "cornell cs '28",
   marqueeTerms: [
     "agentic RAG",
     "LLM evaluation",
@@ -8,7 +8,6 @@ export const profile = {
     "transcription",
     "React Native + Rust",
     "algorithms",
-    "running + live music",
   ],
   portraitSrc: null as string | null,
   about: [

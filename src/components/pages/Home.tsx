@@ -8,9 +8,7 @@ export function Home() {
         <h1 className="home-page__name" id="home-page-title">
           {profile.name.toLowerCase()}
         </h1>
-        <p className="home-page__subtitle">
-          {profile.heroLine} <span className="home-page__blank" aria-hidden="true" />
-        </p>
+        <p className="home-page__subtitle">{profile.heroLine}</p>
       </div>
       <Marquee terms={profile.marqueeTerms} />
     </section>

@@ -174,15 +174,6 @@ dd { margin: 0; }
   line-height: 1.25;
 }
 
-.home-hero__blank,
-.home-page__blank {
-  display: inline-block;
-  width: 3rem;
-  margin-left: .2rem;
-  border-bottom: 1px solid var(--ink);
-  transform: translateY(-.1rem);
-}
-
 .marquee {
   position: absolute;
   right: 0;
