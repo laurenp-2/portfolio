@@ -2,6 +2,9 @@
       "name": "Lauren Pothuru Dev",
       "version": "0.1.0",
       "private": true,
+      "engines": {
+            "node": ">=20.0.0"
+      },
       "type": "module",
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
@@ -44,6 +47,7 @@
             "react-dom": "^18.3.1",
             "react-hook-form": "^7.55.0",
             "react-resizable-panels": "^2.1.7",
+            "react-router-dom": "^6.30.4",
             "recharts": "^2.15.2",
             "sonner": "^2.0.3",
             "tailwind-merge": "*",
