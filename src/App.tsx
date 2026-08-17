@@ -8,11 +8,11 @@ import { Home } from "./components/pages/Home";
 import { Projects } from "./components/pages/Projects";
 
 const titles: Record<string, string> = {
-  "/": "Lauren Pothuru",
-  "/about": "Lauren Pothuru — About",
-  "/experience": "Lauren Pothuru — Experience",
-  "/projects": "Lauren Pothuru — Projects",
-  "/contact": "Lauren Pothuru — Contact",
+  "/": "Lauren Pothuru Profile",
+  "/about": "Lauren Pothuru Profile — About",
+  "/experience": "Lauren Pothuru Profile — Experience",
+  "/projects": "Lauren Pothuru Profile — Projects",
+  "/contact": "Lauren Pothuru Profile — Contact",
 };
 
 function RouteShell() {
@@ -21,7 +21,7 @@ function RouteShell() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
-    document.title = titles[location.pathname] ?? "Lauren Pothuru";
+    document.title = titles[location.pathname] ?? "Lauren Pothuru Profile";
   }, [location.pathname]);
 
   return (
