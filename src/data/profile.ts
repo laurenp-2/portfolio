@@ -9,7 +9,7 @@ export const profile = {
     "React Native + Rust",
     "algorithms",
   ],
-  portraitSrc: null as string | null,
+  portraitSrc: "/photo.jpg" as string | null,
   about: [
     "Hi, I'm Lauren, a student at Cornell University studying computer science and linguistics. I work across AI/ML engineering and software engineering: LLM evaluation, transcription and RAG pipelines, benchmarking research, and full-stack and systems work with React Native and Rust.",
     "Most recently, I built online evaluation, transcription, and desktop-app features at Junior, and causal failure-attribution benchmarks for agentic RAG at Anote. During the school year, I TA Cornell's algorithms class, supporting 260+ students through sections, problem sets, and proofs. Outside of CS, I run a lot (including a sub-4 marathon), love reading, hiking, and live music.",
